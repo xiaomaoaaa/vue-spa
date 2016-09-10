@@ -1,0 +1,159 @@
+@import './jquery-weui.min.css';
+@import './weui.min.css';
+
+.dred {
+  color: #DC1819;
+}
+.lgray {
+  color: #888;
+}
+.orange {
+  color: #FF7D41;
+}
+.bg-lgray {
+  background-color: #F8F8F8;
+}
+.bg-w {
+  background-color: #FFF;
+}
+.bg-green {
+  background-color: #5EA86F;
+}
+.bg-dred {
+  background-color: #DC1819;
+}
+.bg-orange {
+  background-color: #FF7D41;
+}
+body,
+html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  color: #3E3940;
+}
+.global_navs .cell:before,
+.global_navs:after,
+.global_navs:before {
+  border-color: #F8F8F8;
+}
+.container,
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+page,
+body {
+  background-color: #F8F8F8;
+}
+.container {
+  overflow: hidden;
+}
+.page {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+input {
+  -webkit-appearance: none;
+  /*去除input默认样式*/
+}
+.fo-xxs {
+  font-size: 10px;
+}
+.fo-xs {
+  font-size: 12px;
+}
+.fo-sm {
+  font-size: 14px;
+}
+.fo-md {
+  font-size: 16px;
+}
+.fo-lg {
+  font-size: 18px;
+}
+.fo-xl {
+  font-size: 20px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.ta-c {
+  text-align: center!important;
+}
+.ta-r {
+  text-align: right!important;
+}
+.hide {
+  display: none !important;
+  visibility: hidden !important;
+}
+.border {
+  border: 1px solid #ededed;
+}
+.bd-t + .bd-t {
+  border-top: 1px solid #ededed;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mt {
+  margin-top: 16px;
+}
+.mt-xs {
+  margin-top: 5px;
+}
+.mt-sm {
+  margin-top: 10px;
+}
+.mt-lg {
+  margin-top: 24px;
+}
+.mt-xl {
+  margin-top: 32px;
+}
+.mb {
+  margin-bottom: 16px;
+}
+.pd {
+  padding: 32px 16px 10px;
+}
+.pd-sm {
+  padding: 10px !important;
+}
+.pd-md {
+  padding: 16px;
+}
+.pd-horizontal {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.weui_btn_disabled {
+  background-color: #c8c8c8;
+}
+.x-icon {
+  width: 16px;
+  height: 16px;
+  margin: -2.88px 3.2px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.x-icon.x-icon-lg {
+  width: 24px;
+  height: 24px;
+  margin: -4.32px 4.8px 0;
+}
+.x-icon.x-icon-xl {
+  width: 32px;
+  height: 32px;
+  margin: -5.76px 6.4px 0;
+}

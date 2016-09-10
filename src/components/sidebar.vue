@@ -12,6 +12,11 @@
 
 <script>
 	export default {
+		data () {
+			return {
+				msg: 'hello'			
+			}
+		},
 		props: ['time']
 	}
 </script>

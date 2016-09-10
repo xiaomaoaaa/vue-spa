@@ -1,43 +1,23 @@
 <template>
-  <div id="wrapper">
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <a href="#" class="navbar-brand">
-          <i class="glyphicon glyphicon-time"></i>
-        </a>
-        <ul class="nav navbar-nav">
-          <li><a v-link="'home'">首页</a></li>
-          <li><a v-link="'/time-entries'">计划列表</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="col-sm-3">
-        <sidebar :time="totalTime"></sidebar>
-      </div>
-      <div class="col-sm-9">
-        <router-view></router-view>
-      </div>
-    </div>
+  <com-header :title="title"></com-header>
+  <div class="wrap">
+    内容区
   </div>
 </template>
 <script>
-  import sidebar from './components/sidebar.vue'
+  import comHeader from './components/comHeader.vue'
+  import jquery from './assets/js/jquery-weui.min.js'
 
   export default {
-    components: { 'sidebar': sidebar},
+    components: { 'comHeader': comHeader},
     data () {
       return {
-        totalTime: 1.5
-      }
-    },
-    events: {
-      timeUpdate (timeEntry) {
-        this.totalTime += parseFloat(timeEntry.totalTime)
-      },
-      deleteTime (timeEntry) {
-        this.totalTime -= parseFloat(timeEntry.totalTime)
+        title: '菜篮'
       }
     }
   }
-</script>                              
+</script>   
+<style>
+  @import './components/css/base.css';
+
+</style>                           

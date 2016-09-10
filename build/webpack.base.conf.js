@@ -2,6 +2,7 @@ var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
+var webpack = require("webpack")
 
 module.exports = {
   entry: {
@@ -62,6 +63,13 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('common.js'),
+    new webpack.ProvidePlugin({
+    jQuery: "jquery",
+    $: "jquery"
+    })
+  ],
   vue: {
     loaders: utils.cssLoaders()
   }
