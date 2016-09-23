@@ -1,23 +1,21 @@
 <template>
-  <com-header :title="title"></com-header>
-  <div class="wrap">
-    内容区
+  <div class="container">
+    <com-header></com-header>
+    <home>
+
+    </home>
   </div>
 </template>
 <script>
   import comHeader from './components/comHeader.vue'
-  import jquery from './assets/js/jquery-weui.min.js'
+  import home from './components/home.vue'
+  import store from './vuex/store'
 
   export default {
-    components: { 'comHeader': comHeader},
-    data () {
-      return {
-        title: '菜篮'
-      }
-    }
+    components: {
+      'comHeader': comHeader,
+      home
+    },
+    store
   }
-</script>   
-<style>
-  @import './components/css/base.css';
-
-</style>                           
+</script>                        

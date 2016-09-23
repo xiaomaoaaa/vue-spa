@@ -1,11 +1,23 @@
 <template>
-  <div class="jumbotron">
-    <h1>任务追踪</h1>
-    <p>
-      <strong>
-        <a v-link="'/time-entries'">创建一个任务</a>
-      </strong>
-    </p>
+  <div>
+	  <button @click="increment">
+	  	Increment +1
+	  </button>
+	  <button @click="decrement">
+	  	Increment -1
+	  </button>
   </div>
 </template>
+
+<script>
+	import { incrementCounter, decrementCounter } from '../vuex/actions'
+	export default {
+		vuex: {
+			actions: {
+				increment: incrementCounter,
+				decrement: decrementCounter,
+			}
+		}
+	}
+</script>
 

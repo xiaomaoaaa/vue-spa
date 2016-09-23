@@ -13,7 +13,8 @@
     "babel-runtime": "^6.0.0",
     "jquery": "^3.1.0",
     "vue": "^1.0.21",
-    "vue-scrollspy": "^0.1.3"
+    "vue-scrollspy": "^0.1.3",
+    "vuex": "^1.0.0-rc.2"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
