@@ -1,6 +1,6 @@
 <template>
 	<nav>
-		<h3>Count is {{ counterValue }}</h3>
+		<h3>Count is {{ getCount }}</h3>
 	</nav>
 </template>
 
@@ -9,8 +9,11 @@
 	export default {
 		vuex: {
 			getters: {
-				counterValue: getCount
+				getCount
 			}
+		},
+		ready () {
+			console.log(this.getCount.count)
 		}
 	}
 </script>

@@ -1,3 +1,3 @@
 export function getCount (state) {
-	return state.count
+	return state.count.count
 }
